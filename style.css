@@ -1,21 +1,22 @@
-/* Estilo do contêiner externo */
-.container {
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Adiciona uma barra de rolagem quando necessário */
-}
-
-/* Estilo geral */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(9, 93, 141), rgb(17, 54, 71));
+*{
     margin: 0;
     padding: 0;
 }
 
+
+/* Estilo geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 /* Estilo do formulário */
 .form-container {
+    display: flexbox;
     color: white;
+    margin-top: 45px;
+    margin-bottom: 500px;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,24 +24,34 @@ body {
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
     padding: 30px;
     border-radius: 15px;
-    width: 80%;
-    max-width: 500px;
+    width: calc(100vw - 700px); 
+    height: 100vh; 
 }
 
 /* Estilo do cabeçalho */
-.form-container h1 {
+.form-container h3 {
+    margin-top: 0;
     border: 3px solid rgb(0, 0, 0);
     background-color: rgb(17, 54, 71);
-    padding: 20px;
+    padding: 2px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
+
+/* Estilo para a class "nome, sobrenome, email" */
+.dados {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 
 /* Estilo para a label "Senioridade" */
 label[for="seniority"] {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 /* Estilo para o seletor de senioridade */
@@ -50,7 +61,7 @@ label[for="seniority"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f8f8f8;
-    font-size: 15px;
+    font-size: 14px;
     color: #555;
     margin-bottom: 20px;
     box-sizing: border-box; /* Mantém a largura correta incluindo padding e borda */
@@ -58,29 +69,32 @@ label[for="seniority"] {
 
 /* Estilo para o grupo de opções de rádio */
 .radio-options {
-    margin-bottom: 20px;
+    margin-top: 12px;
 }
 
 /* Estilo para cada opção de rádio */
 .radio-options label {
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* Estilo para o botão de upload de arquivo */
 input[type="file"] {
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 /* Estilo para a área de texto dos arquivos */
 textarea {
-    height: 100px;
+    height: 60px;
     width: calc(100% - 16px); /* Leva em consideração o padding */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f8f8f8;
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 20px;
     box-sizing: border-box; /* Mantém a largura correta incluindo padding e borda */
 }
@@ -95,21 +109,21 @@ textarea {
     font-size: 15px;
     width: 100%;
     padding: 5px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Estilo para o botão "Concluído" */
 button[type="submit"] {
     background-color: #09033d;
     width: 100%; /* Definindo largura para preencher o contêiner */
-    padding: 15px;
+    padding: 5px;
     border: none;
     color: white;
     font-size: 15px;
     cursor: pointer;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 5px;
     box-sizing: border-box;
+    margin-bottom: 50px;
     transition: background-image 0.3s ease-in-out;
 }
 
