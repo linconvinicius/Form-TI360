@@ -1,0 +1,137 @@
+/* Estilo do contêiner externo */
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona uma barra de rolagem quando necessário */
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(9, 93, 141), rgb(17, 54, 71));
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do formulário */
+.form-container {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Estilo do cabeçalho */
+.form-container h1 {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(17, 54, 71);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para a label "Senioridade" */
+label[for="seniority"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o seletor de senioridade */
+#seniority {
+    width: calc(100% - 16px); /* Leva em consideração o padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Mantém a largura correta incluindo padding e borda */
+}
+
+/* Estilo para o grupo de opções de rádio */
+.radio-options {
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada opção de rádio */
+.radio-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o botão de upload de arquivo */
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+/* Estilo para a área de texto dos arquivos */
+textarea {
+    height: 100px;
+    width: calc(100% - 16px); /* Leva em consideração o padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Mantém a largura correta incluindo padding e borda */
+}
+
+/* Estilo dos campos de entrada */
+.form-container input[type="text"],
+.form-container select {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão "Concluído" */
+button[type="submit"] {
+    background-color: #09033d;
+    width: 100%; /* Definindo largura para preencher o contêiner */
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: background-image 0.3s ease-in-out;
+}
+
+/* Estilo hover para o botão "Concluído" */
+button[type="submit"]:hover {
+    background-color:rgb(17, 54, 71)
+}
+
+/* Estilo dos resultados do formulário */
+/* .form-container #formResults {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.form-container #formResults:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+} */
