@@ -1,4 +1,4 @@
-# Formulario_Ti360
+# Formulario TI 360 - Trilha QA
 Formulario para curso de automação com cypress, feito com HTML/CSS com validação em JavaScript
 
 ## Pré-requisitos
