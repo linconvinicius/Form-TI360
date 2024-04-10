@@ -11,7 +11,7 @@ Nenhum pré-requisito é necessário para baixar este formulário. Basta abrir o
   
 2. Abra o arquivo `index.html` em um navegador web.
 
-3. Preencha o formulário e clique no botão "Concluído".
+3. Preencha o formulário e clique no botão "Enviar".
 
 4. Caso algum campo obrigatório não seja preenchido, uma mensagem de alerta será exibida e o formulário não será enviado.
 
