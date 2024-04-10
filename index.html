@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./LogoTI360.png">
-    <link rel="stylesheet" href="style.css">
-    <title>FORM | TI360</title>
-</head>
-
-<body>
-    <div class="form-container">
-    <form id="myForm" onsubmit="return validateForm()">
-        <h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
-                <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
-              </svg> Desafio de Automação <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
-                <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
-              </svg>
-        </h3>
-       
-        <div  class="dados">
-        <label for="firstName">Nome:</label>
-        <input type="text" id="firstName" name="firstName">
-        
-        <label for="lastName">Sobrenome:</label>
-        <input type="text" id="lastName" name="lastName">
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Automação TI 360</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Automação TI 360</h1>
+      <p id="subtitle">Forneça o máximo de informações, por favor.</p>
+      <br />
+    </div>
+    <span class="success">
+      <strong>Mensagem enviada com sucesso.</strong>
+    </span>
+    <span class="error">
+      <strong>Valide os campos obrigatórios!</strong>
+    </span>
+    <div id="white-background">
+      <form>
+        <fieldset class="group">
+          <div class="field">
+            <label for="firstName"><strong>Nome</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="text" name="firstName" id="firstName" required />
+          </div>
+          <div class="field">
+            <label for="lastName"><strong>Sobrenome</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="text" name="lastName" id="lastName" required />
+          </div>
+        </fieldset>
+        <fieldset class="group">
+          <div class="field">
+            <label for="email"><strong>E-mail</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="phone"><strong>Telefone</strong><span class="phone-label-span required-mark"> (obrigatório)</span></label>
+            <input type="number" name="phone" id="phone" />
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="product"><strong>Produto</strong></label>
+          <select id="product">
+            <option selected disabled value="">Selecione</option>
+            <option value="blog">Blog</option>
+            <option value="cursos">Cursos</option>
+            <option value="mentoria">Mentoria</option>
+            <option value="youtube">YouTube</option>
+          </select>
         </div>
-        
-        <label for="seniority">Senioridade:</label>
-        <select id="seniority" name="seniority">
-            <option value="">Selecione</option>
-            <option value="junior">Junior</option>
-            <option value="pleno">Pleno</option>
-            <option value="senior">Senior</option>
-        </select>
-        
-        <label for="question1"><h5>Qual sua escolha de área?</h5></label>
-        <div class="radio-options">
-            <label for="q1_option1"><input type="radio" id="q1_option1" name="question1" value="UX/UI"> UX/UI</label>
-            <label for="q1_option2"><input type="radio" id="q1_option2" name="question1" value="Agilidade"> Agilidade</label>
-            <label for="q1_option3"><input type="radio" id="q1_option3" name="question1" value="Product Owner"> Product Owner</label>
-            <label for="q1_option4"><input type="radio" id="q1_option4" name="question1" value="Desenvolvimento"> Dev (Frontend/Backend)</label>
-            <label for="q1_option5"><input type="radio" id="q1_option5" name="question1" value="Qualidade"> Analista de testes/QA</label>
-            <label for="q1_option6"><input type="radio" id="q1_option6" name="question1" value="Dados"> Analista de Dados</label>
+        <div id="support-type" class="field">
+          <label><strong>Tipo de atendimento</strong></label>
+          <label>
+            <input type="radio" name="atendimento-tat" value="ajuda" checked />Ajuda
+          </label>
+          <label>
+            <input type="radio" name="atendimento-tat" value="elogio" />Elogio
+          </label>
+          <label>
+            <input type="radio" name="atendimento-tat" value="feedback" />Feedback
+          </label>
         </div>
-
-        <label for="file"><h5>Upload de Arquivo:</h5</label>
-        <input type="file" id="file" name="file"><br>
-        
-        <label for="comments"><h4>Conte um pouco da sua experiência:</h4</label><br>
-        <textarea id="comments" name="comments"></textarea><br>
-        
-        <button type="submit">Concluído</button>
-        <div id="formResults" style="display: none;"></div>
-
-    </form>
-   </div>
-</div>
+        <fieldset class="group">
+          <div id="check">
+            <label><strong>Qual seu meio de contato preferencial?</strong></label>
+            <br />
+            <input type="checkbox" id="email-checkbox" name="email" value="email" />
+            <label for="email">E-mail</label>
+            <input type="checkbox" id="phone-checkbox" name="phone" value="phone" />
+            <label for="phone">Telefone</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <br />
+          <label><strong>Como podemos te ajudar?</strong><span class="required-mark"> (obrigatório)</span></label>
+          <textarea row="6" id="open-text-area" name="open-text-area" required></textarea>
+        </div>
+        <div class="field">
+          <label><strong>Adicione um anexo</strong></label>
+          <input id="file-upload" type="file">
+        </div>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </div>
     <script src="script.js"></script>
-</body>
-<footer></footer>
+  </body>
 </html>
