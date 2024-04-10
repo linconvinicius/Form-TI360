@@ -146,32 +146,6 @@ input[type="radio"] {
     display: none;
 }
 
-#cat {
-    display: none;
-}
-
-#privacy {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#privacy a {
-    color: #4fc4cf;
-    font-weight: bold;
-}
-
-#privacy a:hover {
-    color: #181818;
-}
-
-.privacy h2 {
-    text-align: center;
-}
-
-.privacy p {
-    margin-bottom: 0.2em;
-}
-
 @media (max-width: 411px) {
     #white-background {
         border-radius: 0;
