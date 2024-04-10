@@ -17,8 +17,6 @@ Nenhum pré-requisito é necessário para baixar este formulário. Basta abrir o
 
 5. Após o envio, um alerta aparece na tela com a mensagem: "Cadastro realizado com sucesso!".
 
-6. Você poderá ver as respostas salvas na parte inferior do formulário, após 10 segundos as respostas são resetadas.
-
 ## Personalização
 
 Você pode personalizar este formulário conforme suas necessidades, modificando o HTML, CSS e JavaScript conforme necessário.
