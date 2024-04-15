@@ -1,18 +1,20 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto'
 }
 
 #title {
-    color: #fffffe;
+    color: #000000;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #subtitle {
-    color: #fffffe;
+    color: #000000;
     text-align: center;
 }
 
@@ -21,9 +23,9 @@ fieldset {
 }
 
 body {
-    background-color: #181818;
+    background-color: #c7a8fc;
     font-size: 1em;
-    color: #272343;
+    color: #ffffff;
     justify-content: center;
     margin: auto;
     display: grid;
@@ -40,7 +42,7 @@ input, select, textarea, button {
 
 .field label {
     margin-bottom: 0.2em;
-    color: #272343;
+    color: #ffffff;
     display: block;
 }
 
@@ -56,7 +58,7 @@ fieldset.group .field {
 .field input[type="text"], .field input[type="email"], .field input[type="number"], .field select, .field textarea {
     padding: 0.2em;
     border: 1px solid #272343;
-    box-shadow: 2px 2px 2px #181818;
+    box-shadow: 2px 2px 2px #bababa;
     display: block;
 }
 
@@ -105,7 +107,7 @@ textarea {
 }
 
 #white-background {
-    background:#fffffe;
+    background:#3a3a3a;
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
@@ -138,7 +140,7 @@ input[type="radio"] {
 }
 
 .required-mark {
-    color: #2e2e2e;
+    color: #ffffff;
     font-size: 0.9em;
 }
 
