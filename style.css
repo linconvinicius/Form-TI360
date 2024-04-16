@@ -7,14 +7,14 @@
 }
 
 #title {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #subtitle {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ fieldset {
 }
 
 body {
-    background-color: #c7a8fc;
+    background-image: url(image.png);
     font-size: 1em;
     color: #ffffff;
     justify-content: center;
